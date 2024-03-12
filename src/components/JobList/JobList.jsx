@@ -12,6 +12,7 @@ const JobList = () =>{
     const [ arrayLevel , setArrayLevel ]  = useState();
     const [ arrayLenguajes , setArrayLenguajes ]  = useState([]);
     const [ arrayTools , setArrayTools ]  = useState([]);
+    const [ contador , setContador] = useState()
 
     const GenerarArrayLenguajes = (filtro) => {
         const existeElFiltro = arrayLenguajes.includes(filtro);
@@ -66,14 +67,12 @@ const JobList = () =>{
         hayFiltro = true;
         newFilter = newFilter.filter(filt => {
              return arrayTools.every(tool => filt.tools.includes(tool));
-    })}
-    
+    })}    
 
-        hayFiltro &&  setOfertasFiltradas(newFilter);         
+        hayFiltro &&  setOfertasFiltradas(newFilter);
+        setContador(newFilter.length)         
 
     }, [arrayRole, arrayLevel, arrayLenguajes, arrayTools]);
-
-
 
     return(
         <> 
@@ -87,6 +86,7 @@ const JobList = () =>{
                         setArrayLevel = { setArrayLevel }
                         setArrayLenguajes = { setArrayLenguajes }
                         setArrayTools = { setArrayTools }
+                        contador = { contador }
                 />
             )}
 
@@ -110,6 +110,7 @@ const JobList = () =>{
                             setArrayLevel = { setArrayLevel }
                             GenerarArrayLenguajes = {  GenerarArrayLenguajes }                          
                             GenerarArrayTools = { GenerarArrayTools }
+                            
                     />
                 )
             })}

@@ -3,12 +3,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 import "./JobFilter.css"
 
-const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, setArrayLenguajes, setArrayTools }) =>{
+const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, setArrayLenguajes, setArrayTools, contador }) =>{
     return(
         <div className="container">
 
             <div className='Filter-Count'> 
-                <span>15 Resultados </span>
+                <span>{ contador } Resultados </span>
             </div>
              
              {role &&                 
