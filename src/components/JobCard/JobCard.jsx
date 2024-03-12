@@ -19,10 +19,10 @@ const JobCard = ({ company , logo, neww, featured,position,role,level,postedAt,c
 
                             <div className="detalles">
                                 {
-                                    neww && <p className="tags new">NEW!</p>
+                                    neww && <p className="tags new">NUEVO</p>
                                 }
                                 {
-                                    featured && <p className="tags featured">FEATURED</p>        
+                                    featured && <p className="tags featured">DESTACADO</p>        
                                 }
                                 
                             </div>
@@ -48,7 +48,7 @@ const JobCard = ({ company , logo, neww, featured,position,role,level,postedAt,c
                     <div className="filter-tag" onClick={()=>{ setArrayRole( role )}}>
                         { role } 
                     </div>
-                    <div className="filter-tag" onClick={()=>{ setArrayLevel ( level )}}>
+                    <div className="filter-tag" onClick={()=>{ setArrayLevel( level )}}>
                         { level } 
                     </div>
 
@@ -63,9 +63,10 @@ const JobCard = ({ company , logo, neww, featured,position,role,level,postedAt,c
                 </div>               
             </div>
 
-        </div> //fin card
-        
+        </div> //fin card      
+
     )  // fin return
+
 } // fin component
 
 export default JobCard;
