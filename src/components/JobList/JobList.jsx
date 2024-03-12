@@ -31,22 +31,49 @@ const JobList = () =>{
 
         let newFilter = joboffers;
   
-        //filtro de Role
+        // Filtro de Role
         if (arrayRole) {
             hayFiltro = true;
             newFilter = newFilter.filter(filt => filt.role === arrayRole);
         }
-
+        // Filtro level
         if (arrayLevel) {          
             hayFiltro = true;
             newFilter = newFilter.filter(filt => filt.level === arrayLevel);
         }
-
-        hayFiltro &&  setOfertasFiltradas(newFilter); // : setOfertasFiltradas(joboffers);      
         
+       
+        // if (arrayLenguajes.length > 0) {
+        //     hayFiltro = true;
+        //     newFilter = newFilter.filter(filt => arrayLenguajes.some(lang => filt.languages.includes(lang)));
+        // }
         
+        // if (arrayTools.length > 0) {
+        //     hayFiltro = true;
+        //     newFilter = newFilter.filter(filt => arrayTools.some(tollss => filt.tools.includes(tollss)));
+        // }
 
-    }, [arrayRole, arrayLevel]);
+        // Filtro de lenguajes
+    if (arrayLenguajes.length > 0) {
+        hayFiltro = true;
+        newFilter = newFilter.filter(filt => {
+             return arrayLenguajes.every(lang => filt.languages.includes(lang));
+        })
+    }
+
+    // Filtro de tools
+    if (arrayTools.length > 0) {
+        hayFiltro = true;
+        newFilter = newFilter.filter(filt => {
+             return arrayTools.every(tool => filt.tools.includes(tool));
+    })}
+    
+
+        hayFiltro &&  setOfertasFiltradas(newFilter);         
+
+    }, [arrayRole, arrayLevel, arrayLenguajes, arrayTools]);
+
+
 
     return(
         <> 
