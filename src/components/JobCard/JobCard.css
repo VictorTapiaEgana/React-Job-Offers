@@ -1,0 +1,174 @@
+.card{
+    display: flex;
+    justify-content: space-between;    
+    border-radius: 5px;
+    margin: 30px;
+    
+    -webkit-box-shadow: 11px 12px 20px 4px rgba(0,0,0,0.33);
+    -moz-box-shadow: 11px 12px 20px 4px rgba(0,0,0,0.33);
+    box-shadow: 11px 12px 20px 4px rgba(0,0,0,0.33);
+}
+
+.border{
+    border-left: 6px var(--cyan) solid;
+}
+
+.left-side{
+    display: flex;      
+}
+
+#linea{
+    display: none;
+}
+
+.right-side{
+    display: flex;            
+    align-items: center;    
+}
+
+#imgCard{
+    width: 100px;
+    height: 100px;    
+    margin: 30px
+}
+
+.card-content .destacado > h3{
+    font-size: 20px;
+    margin: 40px 0 0px 0px    
+}
+
+.card-content > h2{    
+    margin: 5px auto -20px 0px    
+}
+
+.color-verde{
+    color: var(--cyan);
+    font-family: 500;      
+}
+
+.bold{
+    color:var(--cyan-very-dark);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.card-content ,#jodDetails, .card-img, .card, .card-content > h2,.card-content > h4,.card-content > h3, #imgCard{
+    background-color: white;
+}
+
+#jodDetails{
+    display: flex;    
+    gap:5px;
+    align-items: center;
+}
+
+#jodDetails > h4{
+    font-weight: 500;
+    font-size: 19px;
+    color: var(--cyan-dark);
+}
+
+.destacado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+   
+   
+}
+
+.detalles{
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.card-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.tags{
+    background-color: var(--cyan);
+    color: var(--blanco);
+    font-weight: 700;
+    font-family: "League Spartan";
+    padding: 3px 6px;    
+    border-radius: 50px;
+    position: relative;
+    top: 16px;   
+   
+}
+
+.featured{
+    background-color: var(--cyan-very-dark);
+   
+}
+
+.tags:hover, .filter-tag:hover{
+    cursor: pointer;
+}
+
+.filter-tag{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--cyan);
+    background-color: var(--cyan-badges);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 12px;
+}
+
+@media (max-width: 800px) {
+
+    .card{
+        flex-direction: column;
+        margin-bottom: 50px ;
+        padding-bottom: 0px;
+        height: 380px;
+    }    
+
+    .card-img{       
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .card-content{
+        position: relative;
+        top: -3px;
+    }
+
+    .bold{
+        font-size: 21px;
+    }
+
+     #imgCard{
+        margin: 0;
+        padding: 0;
+        width: 70px;
+        height: 70px;        
+        border-radius: 100%;
+    }
+    
+    .left-side{
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+        top: -60px;
+    } 
+
+    #linea{
+        display: block;        
+        width: 90%;
+        position: relative;
+        top: -100px;
+    }
+
+    .right-side{
+         position: relative;
+         top: -110px; 
+         padding: 20px;              
+    }    
+}
+  
