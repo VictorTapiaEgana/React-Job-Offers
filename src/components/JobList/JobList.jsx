@@ -15,8 +15,7 @@ const JobList = () =>{
 
     const GenerarArrayLenguajes = (filtro) => {
         const existeElFiltro = arrayLenguajes.includes(filtro);
-        !existeElFiltro && setArrayLenguajes([...arrayLenguajes, filtro]);
-        console.log(arrayLenguajes)
+        !existeElFiltro && setArrayLenguajes([...arrayLenguajes, filtro]);        
     }
  
     const GenerarArrayTools = (filtro) => {
