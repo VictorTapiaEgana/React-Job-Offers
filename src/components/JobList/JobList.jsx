@@ -1,14 +1,14 @@
 import JobCard from "../JobCard/JobCard";
 import "./JobList.css"
 
-import joboffers from "../../../data.json";
+import joboffers from "../../../data2.json";
 import { useEffect, useState } from "react";
 import JobFilter from "../JobFilter/JobFilter";
 
 const JobList = () =>{
    
     const [ofertasFiltradas ,setOfertasFiltradas] = useState(joboffers)
-    const [ arrayRole , setArrayRole ]  = useState('Frontend');
+    const [ arrayRole , setArrayRole ]  = useState();
     const [ arrayLevel , setArrayLevel ]  = useState();
     const [ arrayLenguajes , setArrayLenguajes ]  = useState([]);
     const [ arrayTools , setArrayTools ]  = useState([]);
@@ -24,17 +24,29 @@ const JobList = () =>{
     }
     
     useEffect(() => {
-        console.log('useEffect', ofertasFiltradas);
         
-        let newFilter = ofertasFiltradas;
+        setOfertasFiltradas(joboffers)
+        
+        let hayFiltro = false;
 
+        let newFilter = joboffers;
+  
+        //filtro de Role
         if (arrayRole) {
+            hayFiltro = true;
             newFilter = newFilter.filter(filt => filt.role === arrayRole);
         }
 
-        setOfertasFiltradas(newFilter);
+        if (arrayLevel) {          
+            hayFiltro = true;
+            newFilter = newFilter.filter(filt => filt.level === arrayLevel);
+        }
 
-    }, [arrayRole]);
+        hayFiltro &&  setOfertasFiltradas(newFilter); // : setOfertasFiltradas(joboffers);      
+        
+        
+
+    }, [arrayRole, arrayLevel]);
 
     return(
         <> 
