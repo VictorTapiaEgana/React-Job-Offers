@@ -58,5 +58,6 @@ JobFilter.propTypes = {
     setArrayLevel:PropTypes.func,
     setArrayRole:PropTypes.func,
     setArrayLenguajes:PropTypes.func,
-    setArrayTools:PropTypes.func
+    setArrayTools:PropTypes.func,
+    contador:PropTypes.number
 };
