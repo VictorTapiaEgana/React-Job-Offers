@@ -6,6 +6,10 @@ import "./JobFilter.css"
 const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, setArrayLenguajes, setArrayTools }) =>{
     return(
         <div className="container">
+
+            <div className='Filter-Count'> 
+                <span>15 Resultados </span>
+            </div>
              
              {role &&                 
                    <div key={uuidv4()} className='tag-filter'> 

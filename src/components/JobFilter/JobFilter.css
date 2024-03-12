@@ -30,7 +30,6 @@
 }
 
 .tag-filter > button{
-
     border: none;
     background-color: var(--cyan);
     height: 40px; 
@@ -40,5 +39,17 @@
     font-size: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
 
+.Filter-Count{
+    position: absolute;
+    top: 95px;
+    background-color: var(--cyan-badges);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: 15px;    
+    border: 5px var(--blanco) solid;
+    letter-spacing: 1px;
 }
