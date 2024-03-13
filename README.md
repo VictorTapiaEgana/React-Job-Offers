@@ -42,9 +42,11 @@ https://react-job-offers.vercel.app/  👈
 ## Screenshots
 
 Vista PC:
+
 ![App Screenshot](https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/videos_demo/screenshoot%201.jpg)
 
 Vista Mobil:
+
 ![App Screenshot](https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/videos_demo/screenshoot.jpg)
 ## Posibles Mejoras
 
