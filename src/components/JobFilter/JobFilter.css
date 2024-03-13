@@ -53,3 +53,14 @@
     border: 5px var(--blanco) solid;
     letter-spacing: 1px;
 }
+@media (max-width: 800px) {
+
+    .tag-filter button {
+        position: relative;
+        left: -5px;
+        width: 40px;
+        /* color: red;
+        background-color: black; */
+    }
+
+}
