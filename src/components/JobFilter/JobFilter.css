@@ -56,3 +56,11 @@
     border: 5px var(--blanco) solid;
     letter-spacing: 1px;
 }
+
+@media (max-width: 800px) {
+
+    .botonx{
+        position: relative;
+        left: -5px;
+    }
+}
