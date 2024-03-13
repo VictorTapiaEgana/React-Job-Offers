@@ -57,11 +57,11 @@
     letter-spacing: 1px;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
 
     .botonx > img{
         position: relative;
         left: -5px;
         top: 1px;
     }
-}
+} */
