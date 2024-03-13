@@ -41,38 +41,27 @@ const JobList = () =>{
         if (arrayLevel) {          
             hayFiltro = true;
             newFilter = newFilter.filter(filt => filt.level === arrayLevel);
-        }
-        
-       
-        // if (arrayLenguajes.length > 0) {
-        //     hayFiltro = true;
-        //     newFilter = newFilter.filter(filt => arrayLenguajes.some(lang => filt.languages.includes(lang)));
-        // }
-        
-        // if (arrayTools.length > 0) {
-        //     hayFiltro = true;
-        //     newFilter = newFilter.filter(filt => arrayTools.some(tollss => filt.tools.includes(tollss)));
-        // }
-
+        }             
+     
         // Filtro de lenguajes
-    if (arrayLenguajes.length > 0) {
-        hayFiltro = true;
-        newFilter = newFilter.filter(filt => {
-             return arrayLenguajes.every(lang => filt.languages.includes(lang));
-        })
-    }
+        if (arrayLenguajes.length > 0) {
+            hayFiltro = true;
+            newFilter = newFilter.filter(filt => {
+                return arrayLenguajes.every(lang => filt.languages.includes(lang));
+            })
+        }
 
-    // Filtro de tools
-    if (arrayTools.length > 0) {
-        hayFiltro = true;
-        newFilter = newFilter.filter(filt => {
-             return arrayTools.every(tool => filt.tools.includes(tool));
-    })}    
+        // Filtro de tools
+        if (arrayTools.length > 0) {
+            hayFiltro = true;
+            newFilter = newFilter.filter(filt => {
+                return arrayTools.every(tool => filt.tools.includes(tool));
+        })}    
 
-        hayFiltro &&  setOfertasFiltradas(newFilter);
-        setContador(newFilter.length)         
+            hayFiltro &&  setOfertasFiltradas(newFilter);
+            setContador(newFilter.length)         
 
-    }, [arrayRole, arrayLevel, arrayLenguajes, arrayTools]);
+        }, [arrayRole, arrayLevel, arrayLenguajes, arrayTools]);
 
     return(
         <> 
