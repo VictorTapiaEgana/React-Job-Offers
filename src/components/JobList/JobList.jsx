@@ -1,7 +1,7 @@
 import JobCard from "../JobCard/JobCard";
 import "./JobList.css"
 
-import joboffers from "../../../data2.json";
+import joboffers from "../../assets/data/data2.json";
 import { useEffect, useState } from "react";
 import JobFilter from "../JobFilter/JobFilter";
 
