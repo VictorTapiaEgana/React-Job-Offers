@@ -8,6 +8,7 @@ const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, 
         <div className="container">
 
             <div className='Filter-Count'> 
+
                 <span>{ contador } Resultados </span>
             </div>
              

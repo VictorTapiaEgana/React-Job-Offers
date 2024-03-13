@@ -57,11 +57,20 @@ const JobList = () =>{
             newFilter = newFilter.filter(filt => {
                 return arrayTools.every(tool => filt.tools.includes(tool));
         })}    
+    // Filtro de tools
+    if (arrayTools.length > 0) {
+        hayFiltro = true;
+        newFilter = newFilter.filter(filt => {
+             return arrayTools.every(tool => filt.tools.includes(tool));
+
+    })}    
 
             hayFiltro &&  setOfertasFiltradas(newFilter);
             setContador(newFilter.length)         
 
-        }, [arrayRole, arrayLevel, arrayLenguajes, arrayTools]);
+    }, [arrayRole, arrayLevel, arrayLenguajes, arrayTools]);
+
+ 
 
     return(
         <> 
@@ -99,7 +108,7 @@ const JobList = () =>{
                             setArrayLevel = { setArrayLevel }
                             GenerarArrayLenguajes = {  GenerarArrayLenguajes }                          
                             GenerarArrayTools = { GenerarArrayTools }
-                            
+
                     />
                 )
             })}
