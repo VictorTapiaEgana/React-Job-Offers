@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
+import imgX from "../../assets/images/icon-remove.png"
 
 import "./JobFilter.css"
 
@@ -14,14 +15,18 @@ const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, 
              {role &&                 
                    <div key={uuidv4()} className='tag-filter'> 
                        <div>{  role } </div>                      
-                       <button onClick={()=>{setArrayRole('')}}>X</button>
+                       <button className='botonx' onClick={()=>{setArrayRole('')}}>
+                            <img src={ imgX } alt="Boton eliminar filtro"/>
+                       </button>
                    </div>                
              }
             
              {level &&                 
                    <div key={uuidv4()} className='tag-filter'> 
                        <div>{  level } </div>                      
-                       <button onClick={()=>{setArrayLevel('')}}>X</button>
+                       <button className='botonx' onClick={()=>{setArrayLevel('')}}>
+                       <img src={ imgX } alt="Boton eliminar filtro"/> 
+                       </button>
                    </div>                
              }
 
@@ -30,7 +35,9 @@ const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, 
                 return(
                     <div key={uuidv4()} className='tag-filter'> 
                        <div>{  leng } </div>                      
-                       <button onClick={()=>{setArrayLenguajes(lenguajes.filter(lengu => lengu != leng ) )}}>X</button>
+                       <button className='botonx' onClick={()=>{setArrayLenguajes(lenguajes.filter(lengu => lengu != leng ) )}}>
+                       <img src={ imgX } alt="Boton eliminar filtro"/>
+                       </button>
                     </div> 
                 )                
              })} 
@@ -40,7 +47,9 @@ const JobFilter = ({ role, level,lenguajes, tools, setArrayLevel, setArrayRole, 
                 return(
                     <div key={uuidv4()} className='tag-filter'> 
                        <div>{  toools } </div>                      
-                       <button onClick={()=>{setArrayTools(tools.filter(tolls => tolls != toools))}}>X</button>
+                       <button className='botonx' onClick={()=>{setArrayTools(tools.filter(tolls => tolls != toools))}}>
+                       <img src={ imgX } alt="Boton eliminar filtro"/>
+                       </button>
                     </div> 
                 )                
              })}
