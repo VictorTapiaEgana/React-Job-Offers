@@ -50,5 +50,6 @@ Vista Mobil:
 ![App Screenshot](https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/videos_demo/screenshoot.jpg)
 ## Posibles Mejoras
 
-- Crear un Backend, para crear y modificar ofertas laborales.
-- Revisar el Algoritmo de los filtros
+- Crear una API,para  Leer las ofertas laborales desde una BBDD.
+- Crear un formulario para crear, modificar y eliminar ofertas laborales.
+- Revisar el Algoritmo de los filtros.
