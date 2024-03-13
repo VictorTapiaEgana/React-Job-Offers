@@ -59,7 +59,7 @@
 
 @media (max-width: 800px) {
 
-    .botonx{
+    .botonx > img{
         position: relative;
         left: -5px;
     }
