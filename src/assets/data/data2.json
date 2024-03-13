@@ -3,7 +3,7 @@
   {
       "id": 1,
       "company": "Photosnap",
-      "logo": "/assets/images/photosnap.png",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/photosnap.png",
       "new": true,
       "featured": true,
       "position": "Senior Frontend Developer",
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "company": "Manage",
-      "logo": "src/assets/images/manage.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/manage.png",
       "new": true,
       "featured": true,
       "position": "Desarrollador Fullstack",
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "company": "Account",
-      "logo": "src/assets/images/account.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/account.png",
       "new": true,
       "featured": false,
       "position": "Desarrollador Frontend Junior",
@@ -48,7 +48,7 @@
     {
       "id": 4,
       "company": "MyHome",
-      "logo": "src/assets/images/myhome.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/myhome.png",
       "new": false,
       "featured": false,
       "position": "Desarrollador Frontend Junior",
@@ -63,7 +63,7 @@
     {
       "id": 5,
       "company": "Loop Studios",
-      "logo": "src/assets/images/loop-studios.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/loop-studios.png",
       "new": false,
       "featured": false,
       "position": "Ingeniero de Software",
@@ -78,7 +78,7 @@
     {
       "id": 6,
       "company": "FaceIt",
-      "logo": "src/assets/images/faceit.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/faceit..png",
       "new": false,
       "featured": false,
       "position": "Desarrollador Backend Junior",
@@ -93,7 +93,7 @@
     {
       "id": 7,
       "company": "Shortly",
-      "logo": "src/assets/images/shortly.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/shortly.png",
       "new": false,
       "featured": false,
       "position": "Desarrollador Junior",
@@ -108,7 +108,7 @@
     {
       "id": 8,
       "company": "Insure",
-      "logo": "src/assets/images/insure.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/insure.png",
       "new": false,
       "featured": false,
       "position": "Desarrollador Frontend Junior",
@@ -123,7 +123,7 @@
     {
       "id": 9,
       "company": "Eyecam Co.",
-      "logo": "src/assets/images/eyecam-co.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/eyecam-co.png",
       "new": false,
       "featured": false,
       "position": "Ingeniero Full Stack",
@@ -138,7 +138,7 @@
     {
       "id": 10,
       "company": "The Air Filter Company",
-      "logo": "src/assets/images/the-air-filter-company.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/the-air-filter-company.png",
       "new": false,
       "featured": false,
       "position": "Desarrollador Frontend",
@@ -153,7 +153,7 @@
     {
       "id": 11,
       "company": "Photosnap",
-      "logo": "src/assets/images/photosnap.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/photosnap.png",
       "new": true,
       "featured": true,
       "position": "Desarrollador Web",
@@ -168,7 +168,7 @@
     {
       "id": 12,
       "company": "Manage",
-      "logo": "src/assets/images/manage.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/manage.png",
       "new": true,
       "featured": true,
       "position": "Desarrollador Fullstack",
@@ -183,7 +183,7 @@
     {
       "id": 13,
       "company": "Account",
-      "logo": "src/assets/images/account.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/account.png",
       "new": true,
       "featured": false,
       "position": "Desarrollador Frontend Junior",
@@ -198,7 +198,7 @@
     {
       "id": 14,
       "company": "MyHome",
-      "logo": "src/assets/images/myhome.svg",
+      "logo": "https://raw.githubusercontent.com/VictorTapiaEgana/React-Job-Offers/FiltradoDeArreglo/src/assets/images/myhome.png",
       "new": false,
       "featured": false,
       "position": "Desarrollador Backend Junior",
